@@ -2,7 +2,7 @@
 function cuentaIPN() {
     simplyCountdown('#cuenta', {
         year: 2020, // required
-        month: 5, // required
+        month: 9, // required
         day: 15, // required
         hours: 12, // Default is 0 [0-23] integer
         minutes: 0, // Default is 0 [0-59] integer

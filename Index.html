@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable='no'">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <script src="https://kit.fontawesome.com/59bcf5d722.js" crossorigin="anonymous"></script>
+    <title>Contador para el regreso a clases</title>
+</head>
+<body>
+    <!-- Contendor de la libreria ParticlesJS  -->
+    <div class="general" id="particles-js">
+
+        <div class="header" id="header">
+            <h1 id="titulo">Regreso a clases IPN 2020</h1>
+            <h2>No amigos, no falta poco :(</h2>
+        </div>
+
+        <!-- Este div contiene la cuenta regresiva confirurada en JS -->
+        <div class="cuentaRegresiva" id="cuenta"></div>
+
+        <!-- Contenedor del boton de switch -->
+        <div class="switch">
+            <input type="checkbox" id="switch" /><label for="switch"></label>
+        </div>
+
+        <div class="redes-sociales">
+            <div class="creador">
+                <p>Created by: Emiliano Rivas</p>
+            </div>
+            <a href="https://www.facebook.com/EmilianoRivasMX" class="btn-red-social fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.Instagram.com/EmilianoRivasMX" class="btn-red-social ig" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.Twitter.com/EmilianoRivasMX" class="btn-red-social tw" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.Linkedin.com/in/EmilianoRivasMX" class="btn-red-social lk" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.Github.com/EmilianoRivasMX" class="btn-red-social gh" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <!-- Archivos necesarios para el funcionamiento de sweetAlert(Libreria de Alertas) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/configuracionAlertas.js"></script>
+
+    <!-- Archivos necesarios para el funcionamiento de simplyCountdown(libreria del contador) -->
+    <script src="JS/simplyCountdown.min.js"></script>
+    <script src="JS/CuentasRegresivas.js"></script>
+
+    <!-- Archivos necesarios para el funcionamiento de ParticlesJS -->
+    <script src="JS/particles.min.js"></script>
+    <script src="JS/particulasIPN.js" id="particlesSettings"></script>
+    <script src="JS/particulasUNAM.js" id="particlesSettings"></script>
+
+    <!-- Archico principal de parametros por defecto del contador -->
+    <script src="JS/parametrosDefault.js"></script>
+    
+    <!-- Archivo de configuración del boton -->
+    <script src="JS/switchActions.js"></script>
+
+</body>
+</html>

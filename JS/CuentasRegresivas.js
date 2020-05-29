@@ -10,7 +10,7 @@ function cuentaIPN() {
         words: { //words displayed into the countdown
             days: 'Día',
             hours: 'Hora',
-            minutes: 'Munito',
+            minutes: 'Minuto',
             seconds: 'Segundo',
             pluralLetter: 's'
         },
@@ -51,7 +51,7 @@ function cuentaUNAM() {
         words: { //words displayed into the countdown
             days: 'Día',
             hours: 'Hora',
-            minutes: 'Munito',
+            minutes: 'Minuto',
             seconds: 'Segundo',
             pluralLetter: 's'
         },

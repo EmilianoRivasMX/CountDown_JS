@@ -4,13 +4,12 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Roboto', Arial, serif;
 }
 
 body {
 	background: #EFEFEF;
 	color: #ffffff;
-    font-family: 'Work Sans', sans-serif;
 }
 
 /* ******************* CONTENEDOR GENERAL *************** */
@@ -60,14 +59,14 @@ body {
 
 
 /* ******************* CUENTA REGRESIVA *************** */
-.cuentaRegresiva {
+.general .cuentaRegresiva {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     color: rgb(29, 29, 29);
 }
 
-.cuentaRegresiva .simply-section {
+.general .cuentaRegresiva .simply-section {
     background: #ffffffea;
     width: 180px;
     height: 180px;
@@ -82,39 +81,37 @@ body {
     z-index: 1;
 }
 
-.cuentaRegresiva .simply-section:hover {
+.general .cuentaRegresiva .simply-section:hover {
     box-shadow: 0px 0px 50px 10px #ffffff;
 }
 
-.cuentaRegresiva .simply-amount {
+.general .cuentaRegresiva .simply-amount {
     display: block;
-    font-family: Arial, serif;
     font-size: 50px;
     font-weight: 800;
 }
 
-.cuentaRegresiva .simpply-word {
-    font-family: Arial, serif;
-    font-size: 40px;
-    font-weight: 600;
+.general .cuentaRegresiva .simply-section .simply-word {
+    font-size: 30px;
+    font-weight: 400;
 }
 
 
 /* ******************* BOTON SWITCH *************** */
-.switch {
+.general .switch {
     display: flex;
     justify-content: center;
     margin: 50px 0px;
     z-index: 1;
 }
 
-.switch input[type=checkbox]{
+.general .switch input[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
 }
 
-.switch label {
+.general .switch label {
 	cursor: pointer;
 	text-indent: -9999px;
 	width: 100px;
@@ -125,7 +122,7 @@ body {
 	position: relative;
 }
 
-.switch label:after {
+.general .switch label:after {
 	content: '';
 	position: absolute;
 	top: 3px;
@@ -137,37 +134,36 @@ body {
 	transition: 0.3s;
 }
 
-.switch input:checked + label {
+.general .switch input:checked + label {
 	background: #002B7A;
 }
 
-.switch input:checked + label:after {
+.general .switch input:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
 
-.switch label:active:after {
+.general .switch label:active:after {
 	width: 70px;
 }
 
 
 /* ******************* CREADOR *************** */
-.redes-sociales {
+.general .redes-sociales {
     z-index: 1;
 }
 
-.redes-sociales .creador {
+.general .redes-sociales .creador {
     width: 100%;
     height: 100px;
 
-    font-family: Arial, Serif;
     font-size: 20px;
     font-weight: 600;
 }
 
 
 /* ******************* REDES SOCIALES *************** */
-.redes-sociales .btn-red-social {
+.general .redes-sociales .btn-red-social {
     padding: 15px 0;
 	margin: 0 20px;
     min-width: 120px;
@@ -180,43 +176,43 @@ body {
     transition: .3s ease all;
 }
 
-.redes-sociales .btn-red-social.fb {
+.general .redes-sociales .btn-red-social.fb {
     background: #3b5998;
 }
 
-.redes-sociales .btn-red-social.fb:hover {
+.general .redes-sociales .btn-red-social.fb:hover {
     box-shadow: 0px 0px 50px 10px #234899;
 }
 
-.redes-sociales .btn-red-social.ig {
+.general .redes-sociales .btn-red-social.ig {
     background: linear-gradient(#833ab4, #c13584, #e1306c);
 }
 
-.redes-sociales .btn-red-social.ig:hover {
+.general .redes-sociales .btn-red-social.ig:hover {
     box-shadow: 0px 0px 50px 10px rgba(219, 0, 248, 0.467);
 }
 
-.redes-sociales .btn-red-social.tw {
+.general .redes-sociales .btn-red-social.tw {
     background: #1da1f2;
 }
 
-.redes-sociales .btn-red-social.tw:hover {
+.general .redes-sociales .btn-red-social.tw:hover {
     box-shadow: 0px 0px 50px 10px rgba(0, 170, 248, 0.467);
 }
 
-.redes-sociales .btn-red-social.lk {
+.general .redes-sociales .btn-red-social.lk {
     background: #0077b5;
 }
 
-.redes-sociales .btn-red-social.lk:hover {
+.general .redes-sociales .btn-red-social.lk:hover {
     box-shadow: 0px 0px 50px 10px #0077b5;
 }
 
-.redes-sociales .btn-red-social.gh {
+.general .redes-sociales .btn-red-social.gh {
     background: linear-gradient(#333, #6e5494);
 }
 
-.redes-sociales .btn-red-social.gh:hover {
+.general .redes-sociales .btn-red-social.gh:hover {
     box-shadow: 0px 0px 50px 10px #6e5494;
 }
 
@@ -247,18 +243,26 @@ body {
 
 
     /* ******************* CUENTA REGRESIVA *************** */
-    .cuentaRegresiva {
+    .general .cuentaRegresiva {
         margin-bottom: 50px;
     }
 
-    .cuentaRegresiva .simply-section {
-        width: 120px;
-        height: 120px;
+    .general .cuentaRegresiva .simply-section {
+        width: 130px;
+        height: 130px;
+    }
+
+    .general .cuentaRegresiva .simply-section .simply-amount {
+        font-size: 40px;
+    }
+
+    .general .cuentaRegresiva .simply-section .simply-word {
+        font-size: 20px;
     }
 
 
     /* ******************* REDES SOCIALES *************** */
-    .redes-sociales .btn-red-social {
+    .general .redes-sociales .btn-red-social {
         min-width: 70px;
         min-height: 50px;
     }
@@ -289,42 +293,38 @@ body {
 
 
     /* ******************* CUENTA REGRESIVA *************** */
-    .cuentaRegresiva {
+    .general .cuentaRegresiva {
         margin-bottom: 20px;
     }
 
-    .cuentaRegresiva .simply-section {
+    .general .cuentaRegresiva .simply-section {
         width: 80px;
         height: 80px;
         margin: 0 10px;
     }
 
-    .cuentaRegresiva .simply-amount {
-        display: block;
-        font-family: Arial, serif;
-        font-size: 25px;
-        font-weight: 800;
+    .general .cuentaRegresiva .simply-section .simply-amount {
+        font-size: 20px;
     }
     
-    .cuentaRegresiva .simpply-word {
-        font-family: Arial, serif;
-        font-size: 20px;
-        font-weight: 600;
+    .general .cuentaRegresiva .simply-section .simply-word {
+        font-size: 15px;
+        font-weight: 400;
     }
 
 
     /* ******************* BOTON SWITCH *************** */
-    .switch {
+    .general .switch {
         margin-bottom: 50px;
     }
 
-    .switch label {
+    .general .switch label {
         width: 65px;
         height: 35px;
         border-radius: 35px;
     }
 
-    .switch label:after {
+    .general .switch label:after {
         top: 3px;
         left: 5px;
         width: 30px;
@@ -332,31 +332,30 @@ body {
         border-radius: 30px;
     }
 
-    .switch input:checked + label {
+    .general .switch input:checked + label {
         background: #002B7A;
     }
 
-    .switch input:checked + label:after {
+    .general .switch input:checked + label:after {
         left: calc(100% - 3px);
     }
 
-    .switch label:active:after {
+    .general .switch label:active:after {
         width: 35px;
     }
 
 
     /* ******************* CREADOR *************** */
-    .redes-sociales .creador {
+    .general .redes-sociales .creador {
         width: 100%;
         height: 50px;
-        font-family: Arial, Serif;
         font-size: 18px;
         font-weight: 600;
     }
 
 
     /* ******************* REDES SOCIALES *************** */
-    .redes-sociales .btn-red-social {
+    .general .redes-sociales .btn-red-social {
         min-width: 50px;
         margin: 0 10px;
         padding: 8px 10px;
@@ -380,50 +379,96 @@ body {
 
 
     /* ******************* CUENTA REGRESIVA *************** */
-    .cuentaRegresiva {
+    .general .cuentaRegresiva {
         margin-bottom: 20px;
     }
 
-    .cuentaRegresiva .simply-section {
-        width: 70px;
-        height: 70px;
+    .general .cuentaRegresiva .simply-section {
+        width: 75px;
+        height: 75px;
         margin: 0 10px;
     }
 
-    .cuentaRegresiva .simply-amount {
+    .general .cuentaRegresiva .simply-section .simply-amount {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
-    .cuentaRegresiva .simpply-word {
-        font-family: Arial, serif;
-        font-size: 10px;
-        font-weight: 500;
+    .general .cuentaRegresiva .simply-section .simply-word {
+        font-size: 15px;
+        font-weight: 400;
     }
 
 
     /* ******************* CREADOR *************** */
-    .redes-sociales .creador {
+    .general .redes-sociales .creador {
         width: 100%;
         height: 50px;
-        font-family: Arial, Serif;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 600;
     }
 
 
     /* ******************* REDES SOCIALES *************** */
-    .redes-sociales .btn-red-social {
-        min-width: 50px;
-        min-height: 50px;
+    .general .redes-sociales .btn-red-social {
+        min-width: 40px;
+        min-height: 40px;
         font-size: 20px;
         margin: 0 10px;
-        padding: 15px 10px;
+        padding: 10px 10px;
     }
 
     /* *************** CONTIFURACION DE LA ALERTA ****************** */
     .textoAlerta {
         color:#fafafa;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 355px) { 
+    /* ************ CONTENEDOR GENERAL ********** */
+    .general .header h1{
+        font-size: 12px;
+        margin: 10px 3px;
+    }
+
+    .general .header h2 {
+        font-size: 10px;
+    }
+
+
+    /* ******************* CUENTA REGRESIVA *************** */
+    .general .cuentaRegresiva .simply-section {
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .general .cuentaRegresiva .simply-section .simply-amount {
+        font-size: 15px;
+    }
+
+    .general .cuentaRegresiva .simply-section .simply-word {
+        font-size: 10px;
+    }
+
+
+    /* ******************* CREADOR *************** */
+    .general .redes-sociales .creador {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+
+    /* ******************* REDES SOCIALES *************** */
+    .general .redes-sociales .btn-red-social {
+        margin: 0 5px;
+    }
+
+
+    /* *************** CONTIFURACION DE LA ALERTA ****************** */
+    .textoAlerta {
+        color:#fafafa;
+        font-size: 10px;
     }
 }
